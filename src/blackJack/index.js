@@ -28,7 +28,6 @@ const miModulo = (() => {
     puntosJugadores = [];
     for (let i = 0; i < numJugadores; i++) {
       puntosJugadores.push(0);
-      console.log(puntosJugadores[i]);
     }
 
     puntosHTML.forEach((i) => (i.innerHTML = 0));
@@ -56,7 +55,6 @@ const miModulo = (() => {
         divCartasJugadores
       );
     } else if (puntosJugador === 21) {
-      console.warn("21, Ganaste!");
       btnPedir.disabled = true;
       btnDetener.disabled = true;
     }

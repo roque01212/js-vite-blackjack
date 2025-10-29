@@ -26,7 +26,6 @@ export const crearDeck = (tiposDeCartas, tiposEspeciales) => {
       deck.push(`${tiposEspeciales[j]}${tipo}`);
     }
   }
-  console.log(deck);
   return _.shuffle(deck);
 };
 
